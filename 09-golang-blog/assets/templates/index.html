@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Blog</title>
+</head>
+<body>
+    <div> Index</div>
+    {{ .SomeField }}
+
+    {{ range .Values }}
+        {{ . }}
+    {{ end }}
+
+    {{ if .Data }}
+        {{ .Data }}
+    {{else}}
+        <span> No data </span>
+    {{end}}
+
+</body>
+</html>
